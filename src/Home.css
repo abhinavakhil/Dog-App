@@ -1,0 +1,14 @@
+.col-md-12 {
+  margin-top: 25px;
+}
+
+.card-md-4 {
+  margin-left: 10px;
+}
+
+.dogimage {
+  width: auto;
+  height: 320px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
