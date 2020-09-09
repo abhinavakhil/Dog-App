@@ -2,13 +2,10 @@
   margin-top: 25px;
 }
 
-.card-md-4 {
-  margin-left: 10px;
-}
-
-.dogimage {
-  width: auto;
-  height: 320px;
-  margin-bottom: 25px;
-  border-radius: 10px;
+.item {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 20px;
 }

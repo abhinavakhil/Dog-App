@@ -9,19 +9,16 @@ function Search() {
 
   const handleChange = (event) => {
     setSearchText(event.target.value);
-    console.log(event.target.value);
   };
 
   useEffect(() => {
     axios
       .get(`https://dog.ceo/api/breed/${searchText}/images/random`)
       .then((response) => {
-        console.log(response);
-        console.log(searchText);
         setDogImage(response.data);
       })
       .catch((err) => {
-        console.log(err);
+        // console.log(err);
         setDogImage({ status: "false" });
       });
   }, [searchText]);

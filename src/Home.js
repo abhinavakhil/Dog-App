@@ -9,7 +9,6 @@ function Home() {
     axios
       .get("https://dog.ceo/api/breed/hound/images")
       .then((response) => {
-        console.log(response);
         setData(response.data.message);
       })
       .catch((error) => {
@@ -19,10 +18,12 @@ function Home() {
 
   return (
     <div className="container">
-      <div className="row ">
+      <div className="row">
         <div className="col-md-12">
           {data.map((img) => (
-            <img src={img} alt="images" className="col-md-4 dogimage" />
+            <span className="thumbnail">
+              <img src={img} alt="images" className="col-md-4 col-sm-6 item" />
+            </span>
           ))}
         </div>
       </div>
